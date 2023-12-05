@@ -14,7 +14,6 @@ public class SomeBusinessImplMockTest {
 		when(dataserviceMock.retrieveAllData()).thenReturn(new int[] {25,15,5});
 		SomethingBusinessImplementation businessImplementation = new SomethingBusinessImplementation(dataserviceMock);
 		assertEquals(25, businessImplementation.FindTheGreatestFromAllData());
-		
 	}
 	@Test
 	void FindtheGreatestFromAllData_OneValue() {
@@ -22,6 +21,5 @@ public class SomeBusinessImplMockTest {
 		when(dataserviceMock.retrieveAllData()).thenReturn(new int[] {18});
 		SomethingBusinessImplementation businessImplementation = new SomethingBusinessImplementation(dataserviceMock);
 		assertEquals(18, businessImplementation.FindTheGreatestFromAllData());
-		
 	}
 }
